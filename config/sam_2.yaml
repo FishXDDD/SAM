@@ -1,0 +1,13 @@
+# sam2.yaml
+model_path: "./weights/sam2_b.pt"
+input_jpg_path : "test_data/dog.jpg"
+input_mp4_path : "test_data/COOKIE.mp4"
+preprocess_output_path: "outputs/sam_2/preprocess"
+output_path: "outputs/sam_2/jpg"
+
+#points: null # 注！必须是 [[]] 格式 不能是[] 否则会报错
+points: [[2688, 1512]] # 注！必须是 [[]] 格式 不能是[] 否则会报错
+
+bboxes: null # 注 null 表示 None 不允许直接写 None 否则表示 str 类型
+labels: null # 注 null 表示 None 不允许直接写 None 否则表示 str 类型
+frame_interval: 1 # frame_interval

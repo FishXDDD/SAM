@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34a551ba-2c54-4442-87f6-ed5c49dcd9ce" name="Changes" comment="feat(sam): 实现SAM模型多模式推理与日志管理系统&#10;&#10;- 新增 LogManager 类，支持按级别分类的日志文件轮转与彩色控制台输出&#10;- 实现 SAMPredictor 类，支持 image/video/DynVideo 多种推理模式&#10;- 集成系统信息采集与格式化输出功能，便于推理环境记录&#10;- 添加 YAML 配置文件支持，统一管理模型路径与推理参数&#10;- 支持动态设置日志级别，控制控制台输出但不影响文件记录&#10;- 完善异常处理与参数校验，提升模块健壮性与易用性">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/predict.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="36DyqiTiEiwVMi64Pd6siiH4Qkd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Doctests in predict.executor&quot;: &quot;Run&quot;,
+    &quot;Python.log_mode.executor&quot;: &quot;Run&quot;,
+    &quot;Python.predict.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/gr-vision-h1s1q/HeShiqiang/code/my_github/SAM&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_images" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.27397.106" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34a551ba-2c54-4442-87f6-ed5c49dcd9ce" name="Changes" comment="" />
+      <created>1764555628146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764555628146</updated>
+      <workItem from="1764555629200" duration="26557000" />
+      <workItem from="1764591778574" duration="1114000" />
+      <workItem from="1764639986982" duration="6000" />
+      <workItem from="1764663083454" duration="554000" />
+      <workItem from="1764740460648" duration="6000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(logging): 实现分级日志管理模块&#10;&#10;- 新增 LogManager 类，支持动态调整控制台日志级别&#10;- 实现文件日志按日期和级别分离存储&#10;- 支持 DEBUG/INFO/WARNING/ERROR 四级日志颜色高亮显示&#10;- 提供 set_log_level 方法动态控制控制台输出级别&#10;- 保留所有级别日志到文件，不受控制台级别影响&#10;- 添加日志轮转机制，单文件最大 200MB，保留 5 个备份&#10;- 实现模块化日志分类功能，便于多业务场景使用&#10;- 集成系统环境信息采集与格式化输出功能&#10;- 完善参数解析与配置文件读取逻辑&#10;- 添加详细的测试用例与使用示例">
+      <option name="closed" value="true" />
+      <created>1764592193327</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764592193327</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(sam): 实现SAM模型多模式推理与日志管理系统&#10;&#10;- 新增 LogManager 类，支持按级别分类的日志文件轮转与彩色控制台输出&#10;- 实现 SAMPredictor 类，支持 image/video/DynVideo 多种推理模式&#10;- 集成系统信息采集与格式化输出功能，便于推理环境记录&#10;- 添加 YAML 配置文件支持，统一管理模型路径与推理参数&#10;- 支持动态设置日志级别，控制控制台输出但不影响文件记录&#10;- 完善异常处理与参数校验，提升模块健壮性与易用性">
+      <option name="closed" value="true" />
+      <created>1764592564348</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764592564348</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(logging): 实现分级日志管理模块&#10;&#10;- 新增 LogManager 类，支持动态调整控制台日志级别&#10;- 实现文件日志按日期和级别分离存储&#10;- 支持 DEBUG/INFO/WARNING/ERROR 四级日志颜色高亮显示&#10;- 提供 set_log_level 方法动态控制控制台输出级别&#10;- 保留所有级别日志到文件，不受控制台级别影响&#10;- 添加日志轮转机制，单文件最大 200MB，保留 5 个备份&#10;- 实现模块化日志分类功能，便于多业务场景使用&#10;- 集成系统环境信息采集与格式化输出功能&#10;- 完善参数解析与配置文件读取逻辑&#10;- 添加详细的测试用例与使用示例" />
+    <MESSAGE value="feat(sam): 实现SAM模型多模式推理与日志管理系统&#10;&#10;- 新增 LogManager 类，支持按级别分类的日志文件轮转与彩色控制台输出&#10;- 实现 SAMPredictor 类，支持 image/video/DynVideo 多种推理模式&#10;- 集成系统信息采集与格式化输出功能，便于推理环境记录&#10;- 添加 YAML 配置文件支持，统一管理模型路径与推理参数&#10;- 支持动态设置日志级别，控制控制台输出但不影响文件记录&#10;- 完善异常处理与参数校验，提升模块健壮性与易用性" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(sam): 实现SAM模型多模式推理与日志管理系统&#10;&#10;- 新增 LogManager 类，支持按级别分类的日志文件轮转与彩色控制台输出&#10;- 实现 SAMPredictor 类，支持 image/video/DynVideo 多种推理模式&#10;- 集成系统信息采集与格式化输出功能，便于推理环境记录&#10;- 添加 YAML 配置文件支持，统一管理模型路径与推理参数&#10;- 支持动态设置日志级别，控制控制台输出但不影响文件记录&#10;- 完善异常处理与参数校验，提升模块健壮性与易用性" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/.conda/envs/sam1/lib/python3.9/site-packages/ultralytics/models/sam/predict.py</url>
+          <line>869</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SAM$predict.coverage" NAME="predict Coverage Results" MODIFIED="1764663117162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SAM$Doctests_in_predict.coverage" NAME="Doctests in predict Coverage Results" MODIFIED="1764591055592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/.conda/envs/sam1/lib/python3.9/site-packages/ultralytics/models/sam" />
+    <SUITE FILE_PATH="coverage/SAM$log_mode.coverage" NAME="log_mode Coverage Results" MODIFIED="1764568225136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+  </component>
+</project>
